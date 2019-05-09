@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "aws-ip-ranges",
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@ardnt/now-python-wsgi"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
+}
